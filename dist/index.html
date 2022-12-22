@@ -11,7 +11,7 @@
     <title>Work5</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <aside class="aside col-3">
                 <a class="aside__link" href="index.html">
@@ -193,16 +193,18 @@
                     </ul>
                 </nav>
             </aside>
-            <header class="header col-9">
-               <div class="header__container">
-                   <nav aria-label="breadcrumb">
-                       <ol class="breadcrumb">
-                           <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                           <li class="breadcrumb-item active" aria-current="page">Мои магазины</li>
-                       </ol>
-                   </nav>
-                   <div class="header__right">
-                       <div class="header__box">
+            <div class="content col">
+                <div class="row">
+                    <header class="header col">
+                        <div class="header__container">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Мои магазины</li>
+                                </ol>
+                            </nav>
+                            <div class="header__right">
+                                <div class="header__box">
                            <span>
                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     width="30px" height="25px" viewBox="0 0 511.626 511.626" style="enable-background:new 0 0 511.626 511.626;"
@@ -227,19 +229,72 @@
                                 </g>
                                 </svg>
                            </span>
-                       </div>
-                       <div class="header__profile">
-                           <div class="header__avatar">
-                               <img src="./img/avatar.webp" alt="Аватар">
-                           </div>
-                           <span class="header__name">Максим Добжанский</span>
-                       </div>
-                   </div>
-               </div>
-            </header>
-            <main class="container-fluid col-9">
-
-            </main>
+                                </div>
+                                <div class="header__profile">
+                                    <div class="header__avatar">
+                                        <img src="./img/avatar.webp" alt="Аватар">
+                                    </div>
+                                    <span class="header__name">Максим Добжанский</span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="row">
+                    <main class="main col">
+                        <button class="btn btn--lg btn--access main__create">Создать свой магазин</button>
+                        <h2 class="main__title">Управление магазинами</h2>
+                        <div class="main__table row">
+                            <div class="col">
+                                <div class="row main__heading">
+                                    <div class="col-1">
+                                        &#8470
+                                    </div>
+                                    <div class="col-3">
+                                        Название
+                                    </div>
+                                    <div class="col-4">
+                                        Адрес
+                                    </div>
+                                    <div class="col-4">
+                                        Действие
+                                    </div>
+                                </div>
+                                <div class="row main__market">
+                                    <div class="col-1">
+                                        12345
+                                    </div>
+                                    <div class="col-3">
+                                        Дипломная работа
+                                    </div>
+                                    <div class="col-4">
+                                        http://www.work5.ru/services
+                                    </div>
+                                    <div class="col-4">
+                                        <button class="btn btn--access">Редактировать</button>
+                                        <button class="btn btn--cancel">Удалить</button>
+                                    </div>
+                                </div>
+                                <div class="row main__market">
+                                    <div class="col-1">
+                                        12345
+                                    </div>
+                                    <div class="col-3">
+                                        Дипломная работа
+                                    </div>
+                                    <div class="col-4">
+                                        http://www.work5.ru/services
+                                    </div>
+                                    <div class="col-4">
+                                        <button class="btn btn--access">Редактировать</button>
+                                        <button class="btn btn--cancel">Удалить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
         </div>
     </div>
 </body>

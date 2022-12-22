@@ -55,3 +55,34 @@ button {
 ul {
   @extend %list-reset;
 }
+
+.container {
+  max-width: 1480px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn {
+  position: relative;
+  color: $bg-main;
+  padding: 12px 17px 12px 40px;
+  border-radius: 5px;
+  font-size: 12px;
+  &:hover {
+    &::after, &::before {
+      background-color: #212529;
+    }
+  }
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    background-color: $bg-main;
+    transition: background-color .15s ease-in-out;
+  }
+  &--access {
+    background-color: $bg-access;
+  }
+  &--cancel {
+    background-color: $bg-cancel;
+  }
+}
+

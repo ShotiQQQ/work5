@@ -1,0 +1,39 @@
+.main {
+  padding: 0 60px;
+  font-size: 14px;
+  color: #858585;
+}
+.main__create {
+  margin-bottom: 37px;
+}
+.main__create::before {
+  width: 4px;
+  height: 12px;
+  top: calc(50% - 6px);
+  left: 22px;
+}
+.main__create::after {
+  width: 12px;
+  height: 4px;
+  left: 18px;
+  top: calc(50% - 2px);
+}
+.main__title {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+.main__table {
+  background-color: #fff;
+  padding: 30px;
+}
+.main__heading {
+  color: 343434;
+}
+.main__market {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.main__market:not(:last-child) {
+  border-bottom: 1px solid #d4d4d4;
+}

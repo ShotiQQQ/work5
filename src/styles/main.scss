@@ -1,3 +1,42 @@
 @import "_vars.scss";
 @import "_mixins.scss";
 
+.main {
+  padding: 0 60px;
+  font-size: 14px;
+  color: $text-color;
+  &__create {
+    margin-bottom: 37px;
+    &::before {
+      width: 4px;
+      height: 12px;
+      top: calc(50% - 6px);
+      left: 22px;
+    }
+    &::after {
+      width: 12px;
+      height: 4px;
+      left: 18px;
+      top: calc(50% - 2px);
+    }
+  }
+  &__title {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  &__table {
+    background-color: $bg-main;
+    padding: 30px;
+  }
+  &__heading {
+    color: $dark;
+  }
+  &__market {
+    display: flex;
+    align-items: center;
+    padding:  20px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $border;
+    }
+  }
+}

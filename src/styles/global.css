@@ -362,3 +362,32 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.container {
+  max-width: 1480px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn {
+  position: relative;
+  color: #fff;
+  padding: 12px 17px 12px 40px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.btn:hover::after, .btn:hover::before {
+  background-color: #212529;
+}
+.btn::after, .btn::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  transition: background-color 0.15s ease-in-out;
+}
+.btn--access {
+  background-color: #55c97b;
+}
+.btn--cancel {
+  background-color: #b1b1b1;
+}
