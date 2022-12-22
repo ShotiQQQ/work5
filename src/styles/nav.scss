@@ -1,0 +1,48 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.nav {
+  &__list {
+
+  }
+  &__item {
+    padding: 15px 0 15px 25px;
+  }
+  &__link {
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    background-size: 22px 17px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: $text-color;
+    &:hover {
+      svg path {
+        fill: $menu-active;
+      }
+    }
+    &--active {
+      color: $menu-active;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        left: -25px;
+        top: -15px;
+        bottom: -15px;
+        background-color: $menu-active;
+      }
+      svg path {
+        fill: $menu-active;
+      }
+    }
+  }
+  &__icon {
+    width: 22px;
+    height: 17px;
+    margin-right: 15px;
+    path {
+      fill: $text-color;
+    }
+  }
+}
