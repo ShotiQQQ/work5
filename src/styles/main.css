@@ -21,13 +21,14 @@
 .main__title {
   font-size: 20px;
   margin-bottom: 32px;
+  color: #343434;
 }
 .main__table {
   background-color: #fff;
   padding: 30px;
 }
 .main__heading {
-  color: 343434;
+  color: #343434;
 }
 .main__market {
   display: flex;
@@ -36,4 +37,24 @@
 }
 .main__market:not(:last-child) {
   border-bottom: 1px solid #d4d4d4;
+}
+.main__change {
+  background-image: url("../img/pencil.svg");
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+.main__delete::before {
+  width: 3px;
+  height: 15px;
+  top: calc(50% - 7.5px);
+  left: 22px;
+  transform: rotate(45deg);
+}
+.main__delete::after {
+  width: 15px;
+  height: 3px;
+  left: 16px;
+  top: calc(50% - 1.5px);
+  transform: rotate(45deg);
 }
